@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>鹈鹕骑车 · GPT-5.6 Terra</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; background: #c8e9ed; font-family: ui-rounded, "Microsoft YaHei", system-ui, sans-serif; }
+    main { width: min(1120px, 100%); overflow: hidden; border-radius: 30px; box-shadow: 0 25px 65px #17536242; background: #f9e8bd; }
+    svg { display: block; width: 100%; height: auto; }
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.2s linear infinite; }
+    .rider { transform-box: fill-box; transform-origin: center; animation: bob 1.4s ease-in-out infinite; }
+    .cloud { animation: drift 16s ease-in-out infinite alternate; }
+    .cloud.two { animation-delay: -8s; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { 50% { transform: translateY(-7px) rotate(-.4deg); } }
+    @keyframes drift { to { transform: translateX(38px); } }
+    @media (prefers-reduced-motion: reduce) { .wheel,.rider,.cloud { animation: none; } }
+  </style>
+</head>
+<body>
+  <main aria-label="一只鹈鹕在海边骑自行车的插画">
+    <svg viewBox="0 0 1200 760" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
+      <title id="title">鹈鹕骑车</title><desc id="desc">戴着小帽子的鹈鹕在阳光海岸骑一辆红色自行车。</desc>
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7bd4e2"/><stop offset="1" stop-color="#d9f3dd"/></linearGradient>
+        <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#35a9bd"/><stop offset="1" stop-color="#147b9a"/></linearGradient>
+        <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+      </defs>
+      <rect width="1200" height="760" fill="url(#sky)"/>
+      <circle cx="949" cy="126" r="70" fill="#fff2a4"/><circle cx="949" cy="126" r="96" fill="#fff2a4" opacity=".23" filter="url(#soft)"/>
+      <g fill="#fff" opacity=".86" class="cloud"><path d="M94 145c11-31 58-31 70-2 30-18 70 4 62 34H61c-4-21 12-37 33-32z"/><path d="M712 105c10-26 49-28 62-4 25-15 58 4 53 29H678c-3-17 13-29 34-25z"/></g>
+      <g fill="#fff" opacity=".65" class="cloud two"><path d="M322 225c9-24 44-25 56-3 22-13 51 3 47 26H292c-4-16 11-28 30-23z"/></g>
+      <path d="M0 345C136 322 218 365 350 343s269-12 404 7 281-35 446 2v170H0z" fill="url(#sea)"/>
+      <g fill="none" stroke="#c3f3e6" stroke-width="7" opacity=".76"><path d="M74 410c48-20 96 20 144 0s96 20 144 0M620 442c48-20 96 20 144 0s96 20 144 0M300 480c38-16 76 16 114 0s76 16 114 0"/></g>
+      <path d="M0 518c163-31 301 38 470 4s313 28 478-4 185 11 252 1v241H0z" fill="#f8d68b"/>
+      <path d="M0 598c165-29 331 32 502 2s343 32 698-5v165H0z" fill="#e7b85c" opacity=".56"/>
+      <g fill="#d99e49" opacity=".8"><circle cx="113" cy="638" r="8"/><circle cx="290" cy="690" r="6"/><circle cx="976" cy="659" r="8"/><circle cx="1083" cy="596" r="5"/><circle cx="1020" cy="719" r="7"/></g>
+      <g class="rider">
+        <!-- bicycle frame -->
+        <g stroke="#d84545" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path d="M422 564 559 564 494 437Z"/><path d="M494 437 625 564 559 564M559 564 622 439M494 437 461 431M622 439 652 431"/>
+        </g>
+        <g class="wheel" fill="none" stroke="#294c5c" stroke-width="12"><circle cx="422" cy="564" r="82"/><g stroke="#82b7bd" stroke-width="4"><path d="M422 482v164M340 564h164M364 506l116 116M480 506 364 622"/></g><circle cx="422" cy="564" r="9" fill="#294c5c" stroke="none"/></g>
+        <g class="wheel" fill="none" stroke="#294c5c" stroke-width="12"><circle cx="625" cy="564" r="82"/><g stroke="#82b7bd" stroke-width="4"><path d="M625 482v164M543 564h164M567 506l116 116M683 506 567 622"/></g><circle cx="625" cy="564" r="9" fill="#294c5c" stroke="none"/></g>
+        <!-- pelican legs / feet -->
+        <g stroke="#e4973f" stroke-width="18" stroke-linecap="round" fill="none"><path d="M516 403 489 493 462 509M568 402 600 480 622 502"/></g>
+        <!-- wing, body and neck -->
+        <ellipse cx="526" cy="324" rx="89" ry="111" transform="rotate(-19 526 324)" fill="#f7f4df" stroke="#3c6771" stroke-width="6"/>
+        <path d="M500 271c-52 11-88 62-75 117 11 48 58 75 111 57-26-45-23-104-36-174z" fill="#7199a0" stroke="#3c6771" stroke-width="6"/>
+        <path d="M492 271c-17-87 2-170 63-194 68-27 131 37 94 137l-37 119z" fill="#f8f5df" stroke="#3c6771" stroke-width="6"/>
+        <!-- beak and pouch -->
+        <path d="M614 183c56 13 116 44 168 88-69 14-129 14-183-4z" fill="#f1a646" stroke="#3c6771" stroke-width="6" stroke-linejoin="round"/>
+        <path d="M599 267c55 20 116 18 183 4-35 60-107 80-166 38z" fill="#ee8d4e" stroke="#3c6771" stroke-width="6"/>
+        <circle cx="616" cy="158" r="12" fill="#293e48"/><circle cx="620" cy="154" r="4" fill="#fff"/>
+        <!-- jaunty cap -->
+        <path d="M548 101c22-43 86-45 108 3l-12 42-96-10z" fill="#d94e52" stroke="#3c6771" stroke-width="6"/><path d="M536 141c48-12 97-7 132 14-41 17-96 13-135 1z" fill="#bf3c48" stroke="#3c6771" stroke-width="6"/>
+        <!-- rider shirt and handlebar -->
+        <path d="M472 322c40-25 88-10 111 23l-27 73-90-24z" fill="#f5c94f" stroke="#3c6771" stroke-width="6"/>
+        <path d="M541 348c40 13 59 35 80 80" fill="none" stroke="#f8f5df" stroke-width="18" stroke-linecap="round"/><path d="M621 428 656 431" fill="none" stroke="#3c6771" stroke-width="9" stroke-linecap="round"/>
+      </g>
+      <g fill="#3c6771" opacity=".8"><path d="M802 287c17-14 34-14 50 0-17-6-33-6-50 0zM858 315c14-12 29-12 43 0-14-5-28-5-43 0z"/></g>
+      <g font-family="ui-rounded, Microsoft YaHei, sans-serif" text-anchor="middle"><text x="600" y="692" fill="#254e58" font-size="42" font-weight="800" letter-spacing="6">鹈 鹕 骑 车</text><text x="600" y="727" fill="#3e7680" font-size="18" letter-spacing="4">COASTAL CRUISER · GPT-5.6 TERRA</text></g>
+    </svg>
+  </main>
+</body>
+</html>
