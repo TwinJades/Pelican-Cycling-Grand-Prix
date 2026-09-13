@@ -3,4 +3,4 @@
 
 ## 在线查看
 
-[打开渲染后的网页目录](https://twinjades.github.io/-/)
+[打开渲染后的网页目录](https://twinjades.github.io/Pelican-Cycling-Grand-Prix/)
